@@ -1,0 +1,18 @@
+
+
+
+1: SELECT c.* FROM Clientes c WHERE c.Sexo = "M" AND c.Edad > 25;
+
+2: UPDATE Clientes SET Ciudad = "San Juan de los Lagos", Apellidos = "Herrera Huerta" WHERE id = 6;
+
+3: SELECT c.* FROM Clientes c WHERE c.Edad > 19 AND c.Edad <30 AND c.Sexo = "F";
+
+4: SELECT c.* FROM Clientes c WHERE c.Apellidos LIKE '%Huerta%';
+
+5: SELECT COUNT(*) FROM CLIENTES WHERE Estado = "Guanajuato";
+
+6: INSERT INTO CLIENTES(Id,Nombre,Apellidos,Sexo,Edad,Estado,Ciudad) VALUES (1,"Jose","Lopez Gonzalez","M",23,"Guanajuato","Leon");
+
+7: SELECT Estado, [Cantidad] = count(*) FROM Clientes GROUP BY Estado ORDER BY 1 DESC;
+
+8: SELECT c.* FROM Clientes c WHERE c.Sexo ="M" ORDER BY c.Apellidos DESC, c.Nombre;
